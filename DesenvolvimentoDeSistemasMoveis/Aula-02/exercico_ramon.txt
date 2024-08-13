@@ -1,0 +1,10 @@
+exercicio 1 
+Jaqueline está aprendendo a linguagem Dart e quer escrever o seu primeiro programa. O programa vai escrever a frase “Olá, mundo! Meu nome é Jaqueline!” na tela.
+Observe a linha abaixo:
+???("Olá, mundo! Meu nome é Jaqueline!");
+
+Qual comando deve ser inserido no lugar indicado com ??? para que o programa cumpra o seu dever?
+
+    print
+
+exercicio 2
