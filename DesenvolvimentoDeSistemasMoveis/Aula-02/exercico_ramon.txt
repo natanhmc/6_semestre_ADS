@@ -1,10 +1,97 @@
 exercicio 1 
-Jaqueline está aprendendo a linguagem Dart e quer escrever o seu primeiro programa. O programa vai escrever a frase “Olá, mundo! Meu nome é Jaqueline!” na tela.
-Observe a linha abaixo:
-???("Olá, mundo! Meu nome é Jaqueline!");
+        Jaqueline está aprendendo a linguagem Dart e quer escrever o seu primeiro programa. O programa vai escrever a frase “Olá, mundo! Meu nome é Jaqueline!” na tela.
+        Observe a linha abaixo:
+        ???("Olá, mundo! Meu nome é Jaqueline!");
 
-Qual comando deve ser inserido no lugar indicado com ??? para que o programa cumpra o seu dever?
+        Qual comando deve ser inserido no lugar indicado com ??? para que o programa cumpra o seu dever?
 
-    print
+print
 
 exercicio 2
+
+        Larissa estava ajudando seu amigo Lucas em seu programa feito em Dart e observa o seguinte código:
+        ??? primeiro_numero = 42;
+        ??? segundo_numero = primeiro_numero / 4;
+        ??? terceiro_numero = primeiro_numero * 2;
+        ??? quarto_numero = terceiro_numero - segundo_numero;
+
+        Lucas não conseguiu de imediato identificar quais os tipos de variáveis que devem ser atribuídos no código. Mas Larissa imediatamente conseguiu enxergar quais são eles.
+        Qual das opções abaixo contém os tipos que farão esse programa executar sem problemas?
+int 
+double
+double
+double
+
+exercicio 3
+        Luísa quer criar uma cadeia de strings que precisam ser impressas de forma sequencial. Ela criou as seguintes variáveis:
+        String texto_inicio = 'Olá, meu nome é ';
+        String endereco = 'rua Ovomaltine, número 65';
+        String nome = 'Luísa';
+        String texto_meio = ' eu tenho 22 anos';
+        String texto_final = ' e moro na ';
+
+
+
+        Quais das seguintes opções vão imprimir a frase na ordem correta?
+
+print(texto_inicio + nome + texto_meio + texto_final + endereco );
+
+exercicio 4
+        
+        Danilo quer fazer um programa para categorizar a altura de pessoas. O programa deve receber a altura de uma pessoa em centímetros e retornar uma das 4 opções:
+        Se a altura da pessoa for menor que 150 centímetros, ela é pequena.
+        Se a altura da pessoa for maior ou igual a 150 centímetros e menor que 175 centímetros, ela é média.
+        Se a altura da pessoa for maior ou igual a 175 centímetros e menor que 195 centímetros, ela é grande.
+        Se a altura da pessoa for maior que 195 centímetros, ela é gigante.
+        Danilo começou o programa escrevendo o seguinte código:
+        void main() {
+            int altura = 178;
+
+            // ifs aqui
+        }
+
+        Ajude Danilo a implementar as regras do programa utilizando condicionais.
+
+void main()
+{
+  int altura = 178;
+  
+  if(altura < 150){
+    print("pequena");
+  }else if(altura < 175 && altura >= 150){
+    print("média");
+  }else if(altura >= 175 && altura < 195){
+    print("grande");
+  }else{
+    print("gigante");
+  }
+
+}
+
+exercicio 5
+        Juliana está com dificuldades de entender condicionais, e para a ajudar, Leandro preparou um desafio para ela: encontrar o maior de três números.
+        Leandro enviou o seguinte código para sua amiga:
+        void main() {
+            int num1 = 18;
+            int num2 = 65;
+            int num3 = 45;
+            int maior;
+            if( ??? ) { maior = num1; }
+            if( ??? ) { maior = num2; }
+            if( ??? ) { maior = num3; }
+            print("O maior número é o de valor $maior");
+        }
+
+        Por quais linhas de código Juliana deve substituir os ??? no código de Leandro, respectivamente, para o programa funcionar da maneira esperada?
+
+void main() {
+    int num1 = 18;
+    int num2 = 65;
+    int num3 = 45;
+    int maior = num1;
+    if(num2 > maior) { maior = num2; }
+    if(num3 > maior) { maior = num3; }
+    print("O maior número é o de valor $maior");
+ }
+
+
