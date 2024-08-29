@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a id="link" href="#" onclick="navigate('home')">Home</a></li>
+                <li><a id="link" href="#" onclick="navigate('sobre')">Sobre</a></li>                
+                <li><a id="link" href="#" onclick="navigate('servicos')">Serviços</a></li>
+                <li><a id="link" href="#" onclick="navigate('contato')">Contato</a></li>
+
+            </ul>
+        </nav>
+        <button id="menu-toggle">Menu</button>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao meu site</h2>
+            <p>Este é um exemplo de layout usando html, css e javascript</p>
+        </section>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Delectus aperiam ex 
+                consectetur non repellendus reprehenderit.
+                 Beatae optio itaque perferendis soluta 
+                 accusantium. Natus fugiat explicabo conseq
+                 uatur quisquam? Consequuntur illo maxime 
+                 modi.</p>
+        </section>
+        <section id="servicos">
+            <h2>Servicos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quo a fuga labore nostrum distinctio ab sapiente architecto cum sint illum reprehenderit quia, quos officiis facere cupiditate doloremque, unde suscipit?</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="formularioContato">
+
+                <label for="nome">Nome:</label>
+                <br>
+                <input id="nome" type="text" name="nome">
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <br>
+                <input id="email" type="email" name="email">
+                <br><br>
+
+                <label for="phone">Telefone:</label>
+                <br>
+                <input type="phone" name="phone" id="phone">
+                <br><br>
+
+                <button type="button" onclick="submitForm()">Enviar</button>
+            </form>
+            <div id="tabelaContato"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 Meu site</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
