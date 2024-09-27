@@ -251,23 +251,21 @@ class RedeNeural {
 
 let rede = new RedeNeural(48, 96, 10);
 
-
-
 // Treinando a rede
-for (let i = 0; i < 10000; i++) {  // 10.000 iterações de treinamento
+for (let i = 0; i < 1000; i++) {  // 10.000 iterações de treinamento
     for (let dados of treinamento) {
         rede.treinar(dados.entrada.flat(), dados.resultadoEsperado, 0.1);
     }
 }
 let numeroParaTestar = [
-    [0,1,1,1,1,0],
-    [1,0,0,0,0,1],
-    [0,0,0,0,0,1],
-    [0,0,0,0,1,0],
     [0,0,0,1,0,0],
-    [0,0,1,0,0,0],
-    [0,1,0,0,0,0],
+    [0,0,1,1,0,0],
+    [0,1,0,1,0,0],
+    [1,0,0,1,0,0],
     [1,1,1,1,1,1],
+    [0,0,0,1,0,0],
+    [0,0,0,1,0,0],
+    [0,0,0,1,0,0],
 ]
 
 console.log("Rede treinada com sucesso !!\n");

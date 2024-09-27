@@ -1,10 +1,9 @@
 //3 - Crie uma classe pessoa utilizando um const constructor. 
 //A classe precisa ter os atributos idade, nome, cpf e 
 //além disso eles devem ser obrigatórios e nomeados.
-void main(){
+void main(){ 
   
 }
-
 class Pessoa{
   final int idade;
   final String nome;
